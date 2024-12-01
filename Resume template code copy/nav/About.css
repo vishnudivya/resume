@@ -1,0 +1,608 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+/* navbar */
+
+.navbar {
+    background-color: #161515;
+    border-radius: 0 0 15px 15px;
+
+}
+
+.navbar-nav {
+    flex-direction: row;
+    justify-content: center;
+}
+
+.navbar-nav .nav-item {
+    margin: 0 15px;
+}
+
+.navbar-collapse {
+    justify-content: center;
+}
+
+
+.navbar a:hover {
+    transform: scale(1.3);
+}
+
+
+.nav-link.active {
+    color: #007bff !important;
+}
+
+.fixed-md-bottom {
+    position: static;
+    /* Default behavior */
+}
+
+
+/* Popup Container */
+
+#popupForm .popup-content {
+    max-width: 100%; /* Ensures it doesn't exceed the screen width */
+    height: auto; /* Adjust height to content */
+    object-fit: cover;
+}
+
+.popup-content {
+    width: 50%;
+    padding: 8px;
+}
+
+
+.popup {
+    display: none;
+    /* Initially hidden */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Popup Content */
+.popup-content {
+    color: #161515;
+    background: linear-gradient(67.7deg, rgb(252, 185, 125) -0.9%, rgb(245, 231, 106) 22.8%, rgb(160, 236, 208) 50.3%, rgb(57, 178, 209) 75.5%, rgb(183, 174, 193) 100.2%);
+    padding: 20px;
+    border-radius: 10px;
+    width: 950px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.popup-content h2 {
+    margin-top: 0;
+}
+
+/* Close Button */
+.popup-content .close {
+    position: absolute;
+    top: 1px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Form Elements */
+.popup-content form input,
+.popup-content form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.popup-content form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Popup-img & Design */
+#popupForm .container {
+    margin: 15px 0 15px 0;
+    border: 8px solid #263238;
+    border-radius: 5px;
+}
+
+.form-img img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Button styling */
+.btn {
+    width: 100%;
+    text-decoration: none;
+    background-color: #D9AC64;
+    border-radius: 14px;
+    border: none;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* Info-section */
+.info-section {
+    background-color: #161515;
+    border-radius: 15px;
+    height: 800px
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 15px;
+    margin-top: 2rem;
+    height: 200px;
+}
+
+.img-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.infoAll-section {
+    padding: 6rem 0 1rem 4rem;
+}
+
+
+/* hr */
+hr {
+    width: 8%;
+    height: 4px;
+    margin-bottom: 30px;
+    border: none;
+    background-color: #D9AC64;
+}
+
+/* what I'm doing */
+
+.what-doing {
+    margin-top: 3rem;
+}
+
+
+.work {
+    background-color: #161515;
+    border-radius: 15px;
+    height: 180px;
+    width: 300px;
+}
+
+.web {
+    /* border: red 1px solid; */
+}
+
+.UI {
+    /* border: white 1px solid; */
+    overflow-wrap: break-word;
+    /* Break words if too long */
+    word-wrap: break-word;
+    /* Compatibility for older browsers */
+    word-break: break-word;
+    /* Force line breaks on long words */
+    overflow: hidden;
+    /* Prevent text from spilling out */
+    white-space: normal;
+    /* Allow text to wrap to the next line */
+    max-width: 100%;
+    /* Ensure it stays within the container width */
+}
+
+
+/* For screens larger than 1310px (larger laptop screen) */
+
+@media (min-width: 1311px) {}
+
+
+
+/* For screens smaller than 1200px (larger tablets / small laptops) */
+@media (max-width: 1310px) {
+    .navbar {
+        padding: 1rem;
+    }
+
+    .custom-navbar {
+        margin-left: 0;
+        padding: 0 1.5rem;
+    }
+
+    .popup-content {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .info-section {
+        height: auto;
+    }
+
+    .work {
+        height: auto;
+        width: 100%;
+    }
+}
+
+
+
+@media (max-width: 1199px) {
+    .navbar {
+        padding: 1rem;
+    }
+
+    .custom-navbar {
+        margin-left: 0;
+        padding: 0 1.5rem;
+    }
+
+    .popup-content {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .info-section {
+        height: auto;
+    }
+
+    .work {
+        height: auto;
+        width: 100%;
+    }
+}
+
+/* For screens smaller than 992px (tablets / smaller laptops) */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .navbar {
+        padding: 0.5rem;
+    }
+
+    .custom-navbar {
+        margin-left: 0;
+        padding: 0 1rem;
+    }
+
+    .popup-content {
+        width: 90%;
+    }
+
+    .popup-content form input,
+    .popup-content form textarea {
+        padding: 8px;
+    }
+
+    .popup-content form button {
+        padding: 8px 16px;
+    }
+
+/* info-section  */
+.info-section {
+    height: 700px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* All  */
+.infoAll-section {
+    padding: 2rem 2rem;
+}
+
+/* what-i'm-doing-work  */
+
+.what-doing {
+    width: 100%;
+    height: 100;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.img-container {
+    height: 100px;
+}
+
+.work {
+    max-width: 100%;
+    height: auto;
+    margin-top: 2rem;
+}
+
+body {
+        font-size: 17px;
+    }
+
+    /* navbar  */
+    .fixed-md-bottom {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        /* Ensure it spans the full width */
+        z-index: 1030;
+        /* Higher z-index to stay above other elements */
+    }
+
+    .navbar {
+        background: linear-gradient(90deg, #2A2A2A, #231f1f);
+        padding: 0.5rem;
+        border-radius: 0;
+    }
+
+   
+    .navbar-nav {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .navbar-nav .nav-item {
+        margin: 0 auto;
+    }
+
+    .navbar-collapse {
+        justify-content: center;
+    }
+
+    /* popup-form  */
+    #popupForm .popup-content {
+        max-height: 100%;
+        overflow-y: auto;
+    }
+
+    .popup-content {
+        width: 80%;
+        padding: 15px;
+
+    }
+
+    .popup-content h2 {
+        font-size: 2rem;
+    }
+
+    .popup-content form input,
+    .popup-content form textarea {
+        padding: 6px;
+    }
+
+    .popup-content form button {
+        padding: 6px 14px;
+    }
+
+    /* info-section  */
+    .info-section {
+        padding: 2rem 1rem;
+    }
+
+    /* All  */
+    .infoAll-section {
+        padding: 2rem 2rem;
+    }
+
+    /* what-i'm-doing-work  */
+    #what-doing-work {
+        margin-top: 2rem;
+    }
+
+    .what-doing {
+        width: 100%;
+        height: 100;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .img-container {
+        height: 100px;
+    }
+
+    .work {
+        max-width: 100%;
+        height: auto;
+        margin-top: 2rem;
+    }
+}
+
+
+
+
+/* For screens smaller than 768px (tablets / mobile devices) */
+@media (max-width: 767px) {
+    body {
+        font-size: 17px;
+    }
+
+    /* navbar  */
+    .fixed-md-bottom {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        /* Ensure it spans the full width */
+        z-index: 1030;
+        /* Higher z-index to stay above other elements */
+    }
+
+    .navbar {
+        background: linear-gradient(90deg, #2A2A2A, #231f1f);
+        padding: 0.5rem;
+        border-radius: 0;
+    }
+
+   
+    .navbar-nav {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .navbar-nav .nav-item {
+        margin: 0 auto;
+    }
+
+    .navbar-collapse {
+        justify-content: center;
+    }
+
+    /* popup-form  */
+    #popupForm .popup-content {
+        max-height: 100%;
+        overflow-y: auto;
+    }
+
+    .popup-content {
+        width: 80%;
+        padding: 15px;
+
+    }
+
+    .popup-content h2 {
+        font-size: 2rem;
+    }
+
+    .popup-content form input,
+    .popup-content form textarea {
+        padding: 6px;
+    }
+
+    .popup-content form button {
+        padding: 6px 14px;
+    }
+
+    /* info-section  */
+    .info-section {
+        padding: 2rem 1rem;
+    }
+
+    /* All  */
+    .infoAll-section {
+        padding: 2rem 2rem;
+    }
+
+    /* what-i'm-doing-work  */
+    #what-doing-work {
+        margin-top: 2rem;
+    }
+
+    .what-doing {
+        width: 100%;
+        height: 100;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .img-container {
+        height: 100px;
+    }
+
+    .work {
+        max-width: 100%;
+        height: auto;
+        margin-top: 2rem;
+    }
+}
+
+
+/* For screens smaller than 480px (small mobile devices) */
+@media (min-width: 340px) and (max-width: 479px) {
+
+    body {
+        font-size: 20px;
+    }
+    /* Navbar */
+    .navbar {
+        background: linear-gradient(90deg, #2A2A2A, #231f1f);
+        padding: 0.5rem;
+        border-radius: 0;
+    }
+
+    .navbar-nav {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 20px;
+    }
+
+
+    .navbar-nav .nav-item {
+        margin: 0 auto;
+    }
+
+    .navbar-collapse {
+        justify-content: center;
+    }
+
+    /* popup-Form */
+    #popupForm .popup-content {
+        max-height: 100%;
+        overflow-y: auto;
+    }
+
+    .popup-content {
+        width: 80%;
+        padding: 15px;
+
+    }
+
+    .popup-content h2 {
+        font-size: 2rem;
+    }
+
+    .popup-content form input,
+    .popup-content form textarea {
+        padding: 6px;
+    }
+
+    .popup-content form button {
+        padding: 6px 14px;
+    }
+
+    /* info-section */
+    .info-section {
+        padding: 2rem 1rem;
+    }
+
+    .infoAll-section {
+        padding: 2rem 2rem;
+    }
+
+    /* what-i'm-doing-work */
+    #what-doing-work {
+        margin-top: 2rem;
+    }
+
+    .what-doing {
+        width: 100%;
+        height: 100;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .img-container {
+        height: 100px;
+    }
+
+    .work {
+        max-width: 100%;
+        height: auto;
+        margin-top: 2rem;
+    }
+}
+

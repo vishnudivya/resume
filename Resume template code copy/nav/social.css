@@ -1,0 +1,195 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+/* navbar */
+.navbar {
+    background-color: #161515;
+    border-radius: 0 0 15px 15px;
+}
+
+.navbar a:hover {
+    transform: scale(1.3);
+}
+
+.custom-navbar {
+    margin-left: 50rem;
+    padding: 0 3rem 0.2rem 3rem;
+}
+
+.nav-link.active {
+    color: #007bff !important;
+}
+
+/* Popup Container */
+.popup {
+    display: none;
+    /* Initially hidden */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Popup Content */
+.popup-content {
+    color: #161515;
+    background: linear-gradient(67.7deg, rgb(252, 185, 125) -0.9%, rgb(245, 231, 106) 22.8%, rgb(160, 236, 208) 50.3%, rgb(57, 178, 209) 75.5%, rgb(183, 174, 193) 100.2%);
+    padding: 20px;
+    border-radius: 10px;
+    width: 950px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.popup-content h2 {
+    margin-top: 0;
+}
+
+/* Close Button */
+.popup-content .close {
+    position: absolute;
+    top: 1px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Form Elements */
+.popup-content form input,
+.popup-content form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.popup-content form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Popup-img & Design */
+#popupForm .container {
+    margin: 15px 0 15px 0;
+    border: 8px solid #263238;
+    border-radius: 5px;
+}
+
+.form-img img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Button styling */
+.btn {
+    width: 100%;
+    text-decoration: none;
+    background-color: #D9AC64;
+    border-radius: 14px;
+    border: none;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+
+/* Info-section */
+.info-section {
+    background-color: #161515;
+    border-radius: 15px;
+    height: 800px;
+
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 15px;
+    margin-top: 2rem;
+    height: 200px;
+}
+
+.img-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* hr */
+hr {
+    width: 8%;
+    height: 4px;
+    margin-bottom: 30px;
+    border: none;
+    background-color: #D9AC64;
+}
+
+
+/* Portfolio Section */
+
+.infoAll-section {
+    padding: 6rem 0 1rem 4rem;
+}
+
+.myportfolio a {
+    color: inherit;
+    text-decoration: none;
+    font-size: 20px;
+    transition: transform 0.4s ease, color 0.9s ease;
+}
+
+.myportfolio a:hover {
+    transform: scale(1.3);
+    color: #E2F26B;
+}
+
+/* Social Section */
+
+.social.active {
+    color: yellow !important;
+
+}
+
+.thumbnail-post {
+    background-color: #161515;
+    border-radius: 15px;
+    height: 180px;
+    max-width: 100%;
+}
+.socialWork {
+    background-color: #161515;
+    border-radius: 15px;
+    height: 180px;
+    width: 200px;
+}
+
+.portfolio-work {
+    /* border: 1px solid #ccc; */
+    overflow: hidden;
+}
+
+.portfolio-work img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
