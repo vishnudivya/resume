@@ -44,14 +44,9 @@ body {
 /* Popup Container */
 
 #popupForm .popup-content {
-    max-width: 100%; /* Ensures it doesn't exceed the screen width */
-    height: auto; /* Adjust height to content */
+    max-width: 100%;
+    height: auto;
     object-fit: cover;
-}
-
-.popup-content {
-    width: 50%;
-    padding: 8px;
 }
 
 
@@ -64,7 +59,6 @@ body {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    /* Semi-transparent background */
     justify-content: center;
     align-items: center;
     z-index: 1000;
@@ -74,9 +68,9 @@ body {
 .popup-content {
     color: #161515;
     background: linear-gradient(67.7deg, rgb(252, 185, 125) -0.9%, rgb(245, 231, 106) 22.8%, rgb(160, 236, 208) 50.3%, rgb(57, 178, 209) 75.5%, rgb(183, 174, 193) 100.2%);
-    padding: 20px;
     border-radius: 10px;
-    width: 950px;
+    width: 70%;
+    padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     position: relative;
 }
@@ -189,6 +183,8 @@ hr {
     border-radius: 15px;
     height: 180px;
     width: 300px;
+    margin-top: 2rem;
+    margin-left: 20px;
 }
 
 .web {
@@ -212,78 +208,43 @@ hr {
 }
 
 
-/* For screens larger than 1310px (larger laptop screen) */
+/* For screens larger than 1311px (larger laptop screen) */
+@media (max-width: 1311px) {
+    body {
+        font-size: 17px;
+    }
 
-@media (min-width: 1311px) {}
-
-
-
-/* For screens smaller than 1200px (larger tablets / small laptops) */
-@media (max-width: 1310px) {
     .navbar {
-        padding: 1rem;
-    }
-
-    .custom-navbar {
-        margin-left: 0;
-        padding: 0 1.5rem;
-    }
-
-    .popup-content {
-        width: 90%;
-        padding: 15px;
-    }
-
-    .info-section {
-        height: auto;
-    }
-
-    .work {
-        height: auto;
-        width: 100%;
-    }
-}
-
-
-
-@media (max-width: 1199px) {
-    .navbar {
-        padding: 1rem;
-    }
-
-    .custom-navbar {
-        margin-left: 0;
-        padding: 0 1.5rem;
-    }
-
-    .popup-content {
-        width: 90%;
-        padding: 15px;
-    }
-
-    .info-section {
-        height: auto;
-    }
-
-    .work {
-        height: auto;
-        width: 100%;
-    }
-}
-
-/* For screens smaller than 992px (tablets / smaller laptops) */
-@media (min-width: 768px) and (max-width: 1199px) {
-    .navbar {
+        background: linear-gradient(90deg, #2A2A2A, #231f1f);
         padding: 0.5rem;
+        border-radius: 0 0 15px 15px;
     }
 
-    .custom-navbar {
-        margin-left: 0;
-        padding: 0 1rem;
+
+    .navbar-nav {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 20px;
     }
+
+    .navbar-nav .nav-item {
+        margin: 0 auto;
+    }
+
+    .navbar-collapse {
+        justify-content: center;
+    }
+
+    /* popup-form  */
 
     .popup-content {
-        width: 90%;
+        width: 80%;
+        padding: 20px;
+    }
+
+    .popup-content h2 {
+        font-size: 2rem;
     }
 
     .popup-content form input,
@@ -295,38 +256,121 @@ hr {
         padding: 8px 16px;
     }
 
-/* info-section  */
-.info-section {
-    height: 700px;
-    margin: 0 auto;
-    overflow: hidden;
+    /* info-section  */
+    .info-section {
+        height: 700px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    /* All  */
+    .infoAll-section {
+        padding: 2rem 2rem;
+    }
+
+    /* what-i'm-doing-work  */
+
+    .what-doing {
+        width: 100%;
+        height: auto;
+    }
+
+    .img-container {
+        height: 100px;
+    }
+
+    .work {
+        margin-top: 2rem;
+        margin-left: 20px;
+    }
 }
 
-/* All  */
-.infoAll-section {
-    padding: 2rem 2rem;
-}
 
-/* what-i'm-doing-work  */
+@media (max-width: 1199px) {
 
-.what-doing {
-    width: 100%;
-    height: 100;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
+    body {
+        font-size: 17px;
+    }
 
-.img-container {
-    height: 100px;
-}
+    .navbar {
+        background: linear-gradient(90deg, #2A2A2A, #231f1f);
+        padding: 0.5rem;
+        border-radius: 0 0 15px 15px;
+    }
 
-.work {
-    max-width: 100%;
+
+    .navbar-nav {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .navbar-nav .nav-item {
+        margin: 0 auto;
+    }
+
+    .navbar-collapse {
+        justify-content: center;
+    }
+
+  /* popup-form  */
+.popup-content {
+   max-width: 100%;
     height: auto;
-    margin-top: 2rem;
+    padding: 20px;
 }
 
-body {
+.popup-content h2 {
+    font-size: 2rem;
+}
+
+.popup-content form input,
+.popup-content form textarea {
+    padding: 8px;
+}
+
+.popup-content form button {
+    padding: 8px 16px;
+}
+
+
+    /* info-section  */
+    .info-section {
+        height: 700px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    /* All  */
+    .infoAll-section {
+        padding: 2rem 2rem;
+    }
+
+    /* what-i'm-doing-work  */
+
+    .what-doing {
+        width: 100%;
+        height: auto;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .img-container {
+        height: 100px;
+    }
+
+    .work {
+        width: 100%;
+        height: auto;
+        margin-top: 2rem;
+    }
+}
+
+/* For screens smaller than 992px (tablets / smaller laptops) */
+@media (max-width: 992px) {
+
+    body {
         font-size: 17px;
     }
 
@@ -346,7 +390,7 @@ body {
         border-radius: 0;
     }
 
-   
+
     .navbar-nav {
         display: flex;
         justify-content: center;
@@ -369,9 +413,9 @@ body {
     }
 
     .popup-content {
-        width: 80%;
-        padding: 15px;
-
+        max-width: 100%;
+        height: auto;
+        padding: 80px;
     }
 
     .popup-content h2 {
@@ -380,16 +424,28 @@ body {
 
     .popup-content form input,
     .popup-content form textarea {
-        padding: 6px;
+        padding: 8px;
     }
 
     .popup-content form button {
-        padding: 6px 14px;
+        padding: 8px 16px;
+    }
+
+    /* navbar  */
+    .navbar {
+        padding: 0.5rem;
+    }
+
+    .custom-navbar {
+        margin-left: 0;
+        padding: 0 1rem;
     }
 
     /* info-section  */
     .info-section {
-        padding: 2rem 1rem;
+        height: 700px;
+        margin: 0 auto;
+        overflow: hidden;
     }
 
     /* All  */
@@ -398,13 +454,10 @@ body {
     }
 
     /* what-i'm-doing-work  */
-    #what-doing-work {
-        margin-top: 2rem;
-    }
 
     .what-doing {
         width: 100%;
-        height: 100;
+        height: auto;
         margin-top: 2rem;
         margin-bottom: 2rem;
     }
@@ -414,12 +467,11 @@ body {
     }
 
     .work {
-        max-width: 100%;
+        width: 100%;
         height: auto;
         margin-top: 2rem;
     }
 }
-
 
 
 
@@ -434,9 +486,7 @@ body {
         position: fixed;
         bottom: 0;
         width: 100%;
-        /* Ensure it spans the full width */
         z-index: 1030;
-        /* Higher z-index to stay above other elements */
     }
 
     .navbar {
@@ -445,7 +495,7 @@ body {
         border-radius: 0;
     }
 
-   
+
     .navbar-nav {
         display: flex;
         justify-content: center;
@@ -468,8 +518,9 @@ body {
     }
 
     .popup-content {
-        width: 80%;
-        padding: 15px;
+        max-width: 80%;
+        height: auto;
+        padding: 60px;
 
     }
 
@@ -488,6 +539,7 @@ body {
 
     /* info-section  */
     .info-section {
+        margin: 0;
         padding: 2rem 1rem;
     }
 
@@ -503,9 +555,7 @@ body {
 
     .what-doing {
         width: 100%;
-        height: 100;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
+        height: auto;
     }
 
     .img-container {
@@ -513,7 +563,7 @@ body {
     }
 
     .work {
-        max-width: 100%;
+        width: 100%;
         height: auto;
         margin-top: 2rem;
     }
@@ -526,6 +576,7 @@ body {
     body {
         font-size: 20px;
     }
+
     /* Navbar */
     .navbar {
         background: linear-gradient(90deg, #2A2A2A, #231f1f);
@@ -590,9 +641,8 @@ body {
 
     .what-doing {
         width: 100%;
-        height: 100;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
+        height: auto;
+        margin: 2rem 0;
     }
 
     .img-container {
@@ -600,9 +650,8 @@ body {
     }
 
     .work {
-        max-width: 100%;
+        width: 100%;
         height: auto;
         margin-top: 2rem;
     }
 }
-
